@@ -1,4 +1,15 @@
-## Hi there 👋
+## Hello world, this is for CISC 179 Intro to Python
+
+Hi I'm Marcus, I am learning to code in Python. 
+
+| Language | STYLE |
+|-----:|---------------|
+|       Java| Compiled     |
+|        C++|              |
+|         C#|              |
+|     Python|  Interpreted |
+| JavaScript|              |
+
 
 <!--
 **mdothymes-source/mdothymes-source** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
