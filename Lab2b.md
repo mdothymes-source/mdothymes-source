@@ -62,11 +62,11 @@ Answer:  <class 'str'>
 5 * 25 % 13 + 100 / -2 * 13 // **2 ** 3** (bold operation has number 1 priority)  
 **5 * 25** % 13 + 100 / -2 * 13 // 8 (from left to right the bold is the next priority)  
 **125 % 13** + 100 / -2 * 13 // 8 (from left to right bold is next highest priority)  
-7 + **100 / -2** * 13 // 8   
-7 + **-50 * 13** // 8  
-7 + **-650 // 8**  
-**7 + -82**  
--75  
+8 + **100 / -2** * 13 // 8   
+8 + **-50 * 13** // 8  
+8 + **-650 // 8**  
+**8 + -82**  
+-74  
 
 **Question 3c**  
 print(5 * 25 % 13 + 100 / -2 * 13 // 2 ** 3)  
