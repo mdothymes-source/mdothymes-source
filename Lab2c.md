@@ -46,3 +46,19 @@ print(hex(id(str2[2])), hex(id(str2[3])), hex(id(str2[4])))
 | #  0x103e06800         |  l    |
 | #  0x103e06680         |  d    |  
 
+**Question 3**
+- dogcat
+- the dog chases the cat
+- Error
+
+
+**Question 4**  
+x = 50
+x = x + 1
+
+**Question 5**
+a. hello = "hello" is a valid variable name
+b. _var = 100 is a valid, variable names are able to start with an underscore
+c. !var_1 = 200, variables names cannot have special characters  
+d.  print = "print me" this IS NOT valid because print is a reserved keyword for Python
+e.  False = 0 is not valid because you cannot use reserved keywords for variable names  
