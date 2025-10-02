@@ -78,5 +78,49 @@ else:
     print("Grade F: Failing performance that does not satisfy the basic requirements of the course"
         " and needs to be improved in significant ways.")
 ```
+**Question 5d**
+```python
+user_input = str(input("Please type in AND, OR, or NOT:"))
+if user_input == "NOT":
+    print("--- NOT Truth Table ---")
+    print("Input | Output")
+    print("-----------------------")
+    print("   A   |   Y  ")
+    print("   0   |   1  ")
+    print("   1   |   0  ")
+else:
+    print("You did not type AND, OR, or NOT")
+```
 
+**Question 5e**
+```python
+user_input = int(input("Enter any number, I will tell you if it is ODD or EVEN: "))
+#this will check and compare the last number in the binary representation of the input
+if user_input & 1 == 0:
+    print("Your number is EVEN")
+else:
+    print("Your number is ODD")
+```
+**Question 6**
+```python
+name = input("What's your name? ")
+time = int(input("What time is it? "))
+
+if (time < 1200):
+    print("Hi "+name + ", good morning!")
+# if the above operation is false the elif below will check to see if the time is less than 1800
+elif (time < 1800):
+    print("Hi "+name + ", good afternoon!")
+# if the elif above is false the elif below will compare time to 1800
+elif (time > 1800):
+    print("Hi "+name + ", good evening!")
+# the statement below will print good bye if none of the above conditions are met
+else:
+    print("Good Bye," + name)
+```
+
+**Question 7**  
+one  
+two  
+Because the elif and else was not executed because the condition of the first "if" in the nested if were true.
 
