@@ -100,5 +100,22 @@ print(y)
 ```
 I would use the import copy to do a deep copy. This will allow me to change y without effecting x
 
+**Question 1h**
+Yes you can use "for", "if", "and", and "or" in list comprehension
+
+**Question 1i**
+```python
+sentence = "To be, or not to be, this is the question"
+sent_list = list(sentence)
+spaces = [x for x in sent_list if x == " "] #list comprehension to create a list of all the spaces
+print(len(spaces))
+```
+
+**Question 1j**
+list.insert
+list.append
+list.clear
+list.remove
+list.pop
 
 
