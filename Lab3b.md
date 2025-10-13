@@ -35,8 +35,6 @@ print("Goodbye")
 ```
 **Question 1c**
 ```python
-from os import WCONTINUED
-
 while True:
 
     num1 = int(input("Please enter the first number: "))
