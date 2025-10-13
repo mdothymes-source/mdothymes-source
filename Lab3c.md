@@ -44,31 +44,61 @@ Using pythong the answer should be "3", the double brackets make a list within a
 **Question 1d**
 ```python
 my_list_ten = ["apple", "banana", "orange", "strawberry", "blueberry", "kiwi", "apple", "banana", "pear", "plum"]
-my_list_ten_mem = id(my_list_ten)
+my_list_ten_mem = [] # creating an empty list to fill with the memory ids
 
-for item in my_list_ten:
-    print(id(item))
+for item in my_list_ten: # stepping through the list of ten
+    my_list_ten_mem.append(id(item)) # adding each item's memory id to the empty list
+print(my_list_ten_mem) # printing the new list i created
 ```
-Results:
-4375620720
-4375620816
-4375620912
-4375790512
-4375790576
-4375621104
-4375620720
-4375620816
-4375621392
-4375621488
-The list of mememory locations will have repeats for the items that repeat in my list
+Results:  
+"4375178016", "4375178304", 4375178400, 4375348144, 4375348208, 4375178592, "4375178016", "4375178304", 4375178880, 4375178976
+
+The list of mememory locations will have repeats for "apple" and "banana"
 
 **Question 1e**
 ```python
 my_list_ten = ["apple", "banana", "orange", "strawberry", "blueberry", "kiwi", "apple", "banana", "pear", "plum"]
-my_list_ten.clear()
+my_list_ten.clear() # this clears the list
 ```
 
 **Question 1f**
+```python
+# my_list_ten = ["apple", "banana", "orange", "strawberry", "blueberry", "kiwi", "apple", "banana", "pear", "plum"]
+# my_list_ten_mem = [] # creating an empty list to fill with memory ids
+
+# for item in my_list_ten: # stepping through the list of ten
+#    my_list_ten_mem.append(id(item)) # adding each item's memory id to the empty list
+# print(my_list_ten_mem) # printing the new list i created
+
+my_list_ten = ["apple", "banana", "orange", "strawberry", "blueberry", "kiwi", "apple", "banana", "pear", "plum"]
+my_new_list = ["apple", "banana", "orange", "strawberry", "blueberry", "kiwi", "apple", "banana", "pear", "plum"]
+my_list_ten_mem = [] # creating an empty list to fill with memory ids
+my_new_list_mem = [] # creating an empty list for my new lists memory
+
+for item in my_list_ten: # stepping through the list of ten
+    my_list_ten_mem.append(id(item)) # adding each item's memory id to the empty list
+
+for new_item in my_new_list:
+    my_new_list_mem.append(id(new_item))
+
+print(my_list_ten_mem) # printing the new list i created
+print(my_new_list_mem) # printing the memory for the new list to compare
+```
+Results:
+[4379142944, 4379143232, 4379143328, 4379313072, 4379313136, 4379143520, 4379142944, 4379143232, 4379143808, 4379143904]
+[4379142944, 4379143232, 4379143328, 4379313072, 4379313136, 4379143520, 4379142944, 4379143232, 4379143808, 4379143904]
+The memory locations for the two seperate lists are exactly the same. No wasted memory space
+
+**Question 1g**
+```python
+import copy
+
+x = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+y = copy.deepcopy(x)
+
+print(y)
+```
+I would use the import copy to do a deep copy. This will allow me to change y without effecting x
 
 
 
