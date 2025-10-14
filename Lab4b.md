@@ -65,7 +65,8 @@ my_dict = {}
 for word in my_string:
     my_dict[word] = 1
 print(len(my_dict)) # this will pring the number of items in the dictionary i created
-``
+```
+
 **Question 2a**
 ```python
 import copy
