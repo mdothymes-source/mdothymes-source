@@ -47,3 +47,29 @@ Results:
 4307929824
 4308075648
 The two different IDs show that the my_tuple from the previous question is different than the new one
+
+**Question 1e**
+The code is trying to append an element to the tuple and that is not allowed. The tuple cant change once it is created.
+
+**Question 2a**
+```python
+(one, two, three, four) =  (1, 2, 3, 4)
+print(type(one))
+print(type(two))
+print(type(three))
+print(type(four))
+```
+Answer: the variables are all integers
+
+**Question 2c**
+```python
+x = (1, 2, 3, 4)
+a, *b, c = x
+print(b)
+```
+Results: b = [2,3]  
+
+**Question 3**
+my_x = 4330993176, 4330996376, 4309522672, 4309524816
+my_y = 4330996376, 4309522672, 4309524816, 4310975504
+The numbers that appeared in both the list and the tuple kept the same memory id. A new id was created for numbers that only appeared in one or the other
